@@ -1,12 +1,84 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
-    hello
-</body>
-</html>
+@extends('components.layouts')
+
+@section('content')
+        <div class="left">
+          <h2>💬 Diskusi</h2>
+          <div class="card-grid">
+            <a href="postklik.html" style="text-decoration: none;">
+              <div class="card">
+              <img src="hitler jpg.jpeg" alt="Hitler">
+              <div class="info">
+                <p class="date">📅 Rab, Jan 13, 7:00 PM</p>
+                <p class="title">Hitler dimana?</p>
+                <p class="location">205 attending • Induk, JKT</p>
+              </div>
+            </div>
+            </a>
+            <a href="" style="text-decoration: none;">
+              <div class="card">
+              <img src="hitler jpg.jpeg" alt="Hitler">
+              <div class="info">
+                <p class="date">📅 Rab, Jan 13, 7:00 PM</p>
+                <p class="title">Hitler dimana?</p>
+                <p class="location">205 attending • Induk, JKT</p>
+              </div>
+            </div>  
+            </a>
+            
+            <a href="" style="text-decoration: none;">
+              <div class="card">
+              <img src="bjorka jpg.jpeg" alt="Girl">
+              <div class="info">
+                <p class="date">📅 Rab, Jan 13, 7:00 PM</p>
+                <p class="title">Siapa sebenarnya björke?</p>
+                <p class="location">205 attending • Induk, JKT</p>
+              </div>
+            </div>
+            </a>
+             <a href="" style="text-decoration: none;">
+              <div class="card">
+              <img src="bjorka jpg.jpeg" alt="Girl">
+              <div class="info">
+                <p class="date">📅 Rab, Jan 13, 7:00 PM</p>
+                <p class="title">Siapa sebenarnya björke?</p>
+                <p class="location">205 attending • Induk, JKT</p>
+              </div>
+            </div>
+             </a>
+            
+          </div>
+          <br>
+          
+          
+    
+          <h2>🛒 Produk Jualan</h2>
+          <div class="card-grid">
+            <a href="" style="text-decoration: none;">
+              <div class="card">
+              <img src="chago handbag jpg.jpeg" alt="Shoes">
+              <div class="info">
+                <p class="date">📅 Rab, Jan 13, 7:00 PM</p>
+                <p class="title">Tas cagho ultra leon exclusive</p>
+                <p class="location">205 attending • Induk, JKT</p>
+              </div>
+            </div>
+            </a>
+           
+          </div>
+        </div>
+        
+    
+        <div class="right">
+          <h3>Categories</h3>
+          <ul class="categories">
+            <a href="#" style="text-decoration: none;"><li class="cat career" >Career</li></a>
+            <a href="#" style="text-decoration: none;"><li class="cat gaming">Gaming</li></a>
+              <a href="#" style="text-decoration: none;"><li class="cat sports">Sports</li></a>
+            <a href="#" style="text-decoration: none;"><li class="cat random">Random</li></a>
+            <br><br>
+            <br><br>
+            <a href="#" style="text-decoration: none;"><li class="cat postingananda">Postingan Anda</li></a>
+          </ul>
+          <a href="postingananda.html"></a>
+        </div>
+@endsection
