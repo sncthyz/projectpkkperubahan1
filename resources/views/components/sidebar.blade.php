@@ -8,13 +8,13 @@
       </button>
       <button class="active">
         <span>👥</span
-        ><a href="grouppage.html" style="text-decoration: none; color: black">
+        ><a href="{{ route("group") }}" style="text-decoration: none; color: black">
           Group</a
         >
       </button>
       <button>
         <span>✏️</span>
-        <a href="editpage.html" style="text-decoration: none; color: black"
+        <a href="{{ route('editp') }}" style="text-decoration: none; color: black"
           >Edit</a
         >
       </button>
@@ -26,7 +26,7 @@
       </button>
       <button>
         <span>🔓</span>
-        <a href="loginpage.html" style="text-decoration: none; color: black"
+        <a href="" style="text-decoration: none; color: black"
           >Log In</a
         >
       </button>

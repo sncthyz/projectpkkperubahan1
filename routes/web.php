@@ -3,5 +3,13 @@
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('home');
-});
+    return view('group');
+})->name('group');
+
+Route::get('/edit', function () {
+    return view('edit');
+})->name('editp');
+
+// Route::get('/login', function () {
+//     return view('login');
+// })->name('auth.login');
