@@ -10,6 +10,6 @@ Route::get('/edit', function () {
     return view('edit');
 })->name('editp');
 
-// Route::get('/login', function () {
-//     return view('login');
-// })->name('auth.login');
+Route::get('/login', function () {
+    return view('auth.login');
+})->name('auth.login');

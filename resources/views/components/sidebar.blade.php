@@ -26,7 +26,7 @@
       </button>
       <button>
         <span>🔓</span>
-        <a href="" style="text-decoration: none; color: black"
+        <a href="{{ route('auth.login') }}" style="text-decoration: none; color: black"
           >Log In</a
         >
       </button>
