@@ -30,7 +30,7 @@
               <img src="bjorka jpg.jpeg" alt="Girl">
               <div class="info">
                 <p class="date">📅 Rab, Jan 13, 7:00 PM</p>
-                <p class="title">Siapa sebenarnya andika?</p>
+                <p class="title">Siapa sebenarnya tony?</p>
                 <p class="location">205 attending • Induk, JKT</p>
               </div>
             </div>
