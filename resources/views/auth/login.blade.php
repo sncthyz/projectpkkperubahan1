@@ -285,7 +285,7 @@
     </head>
     <div class="login-container">
         <div class="left-section">
-            <img src="{{ asset('img/luna hok.jpg') }}" alt="Login Illustration">
+            <img src="{{ asset('img/LoginBg.jpg') }}" alt="Login Illustration">
         </div>
         <div class="right-section">
             <h1>Welcome to Mind Loop</h1>
@@ -296,7 +296,8 @@
                 @csrf
                 <input name="email" type="email" placeholder="Email">
                 <input name="password" type="password" placeholder="Password">
-                <button type="submit">Login</button>
+                <button class="login-btn" type="submit">Login</button>
+                <p>Belum punya akun? <span><a href="{{ route('register') }}"  style="color: rgb(0, 42, 255)">Daftar</a></span> sekarang</p>
             </form>
 
 

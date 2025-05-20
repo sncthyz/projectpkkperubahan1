@@ -20,56 +20,6 @@
                 background-color: #f3f4f6;
             }
 
-            /* Sidebar kiri */
-            .sidebar {
-                width: 220px;
-                background-color: white;
-                padding: 20px 10px;
-                display: flex;
-                flex-direction: column;
-                position: sticky;
-                top: 0;
-                height: 100vh;
-                border-right: 1px solid #ddd;
-            }
-
-            .sidebar .active {
-                background-color: #f3f4f6;
-            }
-
-            .sidebar button {
-                background: none;
-                border: none;
-                text-align: left;
-                padding: 10px;
-                cursor: pointer;
-                font-size: 16px;
-                display: flex;
-                align-items: center;
-                gap: 8px;
-                margin-bottom: 10px;
-            }
-
-            .sidebar button:hover {
-                background-color: #f0f0f0;
-                border-radius: 6px;
-            }
-
-            /* Tombol premium di bawah sidebar */
-            .premium-btn {
-                margin-top: auto;
-                padding: 12px;
-                background-color: black;
-                color: white;
-                border-radius: 12px;
-                text-align: center;
-                cursor: pointer;
-            }
-
-            .premium-btn:hover {
-                background-color: #333;
-            }
-
             /* Bagian utama (navbar + konten) */
             .main {
                 flex: 1;
@@ -79,63 +29,6 @@
                 overflow: hidden;
             }
 
-            /* Navbar atas */
-            .navbar {
-                display: flex;
-                justify-content: space-between;
-                padding: 10px 20px;
-                background-color: white;
-                position: sticky;
-                top: 0;
-                z-index: 999;
-                border-bottom: 1px solid #ddd;
-            }
-
-            .navbar-left {
-                display: flex;
-                align-items: center;
-                gap: 10px;
-            }
-
-            .navbar-left img {
-                width: 35px;
-                height: 35px;
-                border-radius: 50%;
-            }
-
-            .navbar-center {
-                font-size: 14px;
-                color: gray;
-                text-align: center;
-                margin-bottom: 10px;
-            }
-
-            .navbar-right {
-                display: flex;
-                align-items: center;
-                gap: 15px;
-            }
-
-            .date-search {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-            }
-
-            .navbar-right input {
-                padding: 6px 12px;
-                border-radius: 20px;
-                border: 1px solid #ccc;
-                outline: none;
-                margin-bottom: 5px;
-            }
-
-            .content-wrapper {
-                overflow-y: auto;
-                padding: 20px;
-                flex: 1;
-            }
 
             /* LOGIN ISI */
 
@@ -285,7 +178,7 @@
     </head>
     <div class="login-container">
         <div class="left-section">
-            <img src="{{ asset('img/luna hok.jpg') }}" alt="Login Illustration">
+            <img class="image-custom" src="{{ asset('img/LoginBg.jpg') }}" alt="Login Illustration">
         </div>
         <div class="right-section">
             <h1>Welcome to Mind Loop</h1>
@@ -297,7 +190,7 @@
                 <input name="name" placeholder="Nama">
                 <input name="email" type="email" placeholder="Email">
                 <input name="password" type="password" placeholder="Password">
-                <button type="submit">Daftar</button>
+                <button class="login-btn" type="submit">Daftar</button>
             </form>
 
         </div>

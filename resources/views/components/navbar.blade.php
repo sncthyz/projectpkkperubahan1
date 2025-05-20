@@ -16,13 +16,13 @@
         <span>🔔</span>
         <button class="rounded-2 p-1">👤 Create</button>
 
-        {{-- <div class="row">
+        <div class="row">
             <h1 class="h6" style="margin-top: 6px;">Selamat Datang, {{ auth()->user()->name }}</h1>
         </div>
         <form class="pe-3" method="POST" action="{{ route('logout') }}">
             @csrf
             <button class="btn btn-danger" type="submit">Logout</button>
-        </form> --}}
+        </form>
 
     </div>
 </div>
