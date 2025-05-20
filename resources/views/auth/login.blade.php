@@ -1,6 +1,6 @@
-@extends('components.layouts')
+@extends('components.authlayouts')
 
-@section('content')
+@section('authcontent')
 
     <head>
         <style>

@@ -14,13 +14,14 @@
             <input type="text" placeholder="Search..." />
         </div>
         <span>🔔</span>
-        <button>👤 Create</button>
+        <button class="rounded-2 p-1">👤 Create</button>
 
-        <!-- resources/views/dashboard.blade.php -->
-        {{-- <h1>Selamat Datang, {{ auth()->user()->name }}</h1>
-        <form method="POST" action="{{ route('logout') }}">
+        {{-- <div class="row">
+            <h1 class="h6" style="margin-top: 6px;">Selamat Datang, {{ auth()->user()->name }}</h1>
+        </div>
+        <form class="pe-3" method="POST" action="{{ route('logout') }}">
             @csrf
-            <button type="submit">Logout</button>
+            <button class="btn btn-danger" type="submit">Logout</button>
         </form> --}}
 
     </div>

@@ -50,6 +50,7 @@ class AuthController extends Controller
         ]);
     }
 
+
     public function dashboard()
     {
         return view('group');
@@ -61,7 +62,7 @@ class AuthController extends Controller
         $request->session()->invalidate();
         $request->session()->regenerateToken();
 
-        return redirect()->route('auth.login')->with('success', 'Logout successful.');
+        return redirect()->route('login')->with('success', 'Logout successful.');
     }
 
     
