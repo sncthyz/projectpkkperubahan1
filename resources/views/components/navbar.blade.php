@@ -14,6 +14,6 @@
             <input type="text" placeholder="Search..." />
         </div>
         <span>🔔</span>
-        <button>👤 Create Acc</button>
+        <button>👤 Create</button>
     </div>
 </div>
