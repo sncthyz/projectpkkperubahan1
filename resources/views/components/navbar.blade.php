@@ -15,5 +15,13 @@
         </div>
         <span>🔔</span>
         <button>👤 Create</button>
+
+        <!-- resources/views/dashboard.blade.php -->
+        {{-- <h1>Selamat Datang, {{ auth()->user()->name }}</h1>
+        <form method="POST" action="{{ route('logout') }}">
+            @csrf
+            <button type="submit">Logout</button>
+        </form> --}}
+
     </div>
 </div>

@@ -291,16 +291,15 @@
             <h1>Welcome to Mind Loop</h1>
             <p>Platform diskusi yang dirancang untuk mempermudah berbagi dan bertukar pikiran.</p>
 
-            <!-- resources/views/auth/login.blade.php -->
-            <form method="POST" action="{{ route('login') }}">
+            <!-- resources/views/auth/register.blade.php -->
+            <form method="POST" action="{{ route('register') }}">
                 @csrf
+                <input name="name" placeholder="Nama">
                 <input name="email" type="email" placeholder="Email">
                 <input name="password" type="password" placeholder="Password">
-                <button type="submit">Login</button>
+                <button type="submit">Daftar</button>
             </form>
 
-
         </div>
-        </form>
     </div>
 @endsection
