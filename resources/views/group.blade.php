@@ -4,9 +4,9 @@
         <div class="left">
           <h2>💬 Diskusi</h2>
           <div class="card-grid">
-            <a href="postklik.html" style="text-decoration: none;">
+            <a href="{{ route("postk") }}" style="text-decoration: none;">
               <div class="card">
-              <img src="hitler jpg.jpeg" alt="Hitler">
+              <img src="{{ asset('img/hitler jpg.jpeg') }}" alt="Hitler">
               <div class="info">
                 <p class="date">📅 Rab, Jan 13, 7:00 PM</p>
                 <p class="title">Hitler dimana?</p>
@@ -16,7 +16,7 @@
             </a>
             <a href="" style="text-decoration: none;">
               <div class="card">
-              <img src="hitler jpg.jpeg" alt="Hitler">
+              <img src="{{ asset('img/hitler jpg.jpeg') }}" alt="Hitler">
               <div class="info">
                 <p class="date">📅 Rab, Jan 13, 7:00 PM</p>
                 <p class="title">Hitler dimana?</p>
@@ -27,7 +27,7 @@
             
             <a href="" style="text-decoration: none;">
               <div class="card">
-              <img src="bjorka jpg.jpeg" alt="Girl">
+              <img src="{{ asset('img/bjorka jpg.jpeg') }}" alt="Girl">
               <div class="info">
                 <p class="date">📅 Rab, Jan 13, 7:00 PM</p>
                 <p class="title">Siapa sebenarnya tony?</p>
@@ -37,7 +37,7 @@
             </a>
              <a href="" style="text-decoration: none;">
               <div class="card">
-              <img src="bjorka jpg.jpeg" alt="Girl">
+              <img src="{{ asset('img/bjorka jpg.jpeg') }}" alt="Girl">
               <div class="info">
                 <p class="date">📅 Rab, Jan 13, 7:00 PM</p>
                 <p class="title">Siapa sebenarnya björke?</p>
@@ -55,7 +55,7 @@
           <div class="card-grid">
             <a href="" style="text-decoration: none;">
               <div class="card">
-              <img src="chago handbag jpg.jpeg" alt="Shoes">
+              <img src="{{ asset('img/chago handbag jpg.jpeg') }}" alt="Shoes">
               <div class="info">
                 <p class="date">📅 Rab, Jan 13, 7:00 PM</p>
                 <p class="title">Tas cagho ultra leon exclusive</p>

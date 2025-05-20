@@ -2,7 +2,7 @@
       <!-- Tombol navigasi -->
       <button>
         <span>➕</span>
-        <a href="publishidea.html" style="text-decoration: none; color: black"
+        <a href="{{ route('postpublish') }}" style="text-decoration: none; color: black"
           >Publish Your Idea</a
         >
       </button>
@@ -20,7 +20,7 @@
       </button>
       <button>
         <span>⚙️</span>
-        <a href="settingpage.html" style="text-decoration: none; color: black"
+        <a href="{{ route('setting') }}" style="text-decoration: none; color: black"
           >Settings</a
         >
       </button>
@@ -34,7 +34,7 @@
       <div class="premium-btn">
         👑
         <a
-          href="upgradepremiumpage.html"
+          href="{{ route('pro') }}"
           style="text-decoration: none; color: white"
           >Upgrade to Premium</a
         >
