@@ -44,7 +44,7 @@ class AuthController extends Controller
             $request->session()->regenerate();
          $request->session()->put('user_id', auth()->id());
         $request->session()->put('user_name', auth()->user()->name);
-            return redirect()->route('group')->with('success', 'Login successful.');
+                return redirect()->route('group')->with('success', 'Login successful.');
         }
 
         return back()->withErrors([

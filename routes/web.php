@@ -29,6 +29,10 @@ Route::get('/setting', function () {
     return view('setting');
 })->name('setting');
 
+Route::get('/postdiskusi', [PostController::class, 'show']);
+Route::post('/postdiskusi', [PostController::class, 'store']);
+
+
 Route::get('/upgrade', function () {
     return view('upgradepremium');
 })->name('pro');
@@ -40,8 +44,6 @@ Route::get('/register', function () {
 
 
 
-Route::get('/postdiskusi', [PostController::class, 'show']);
-Route::post('/postdiskusi', [PostController::class, 'store']);
 
 
 Route::get('/', [AuthController::class, 'showLogin'])->name('login');
