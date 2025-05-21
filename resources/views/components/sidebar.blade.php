@@ -14,7 +14,7 @@
       </button>
       <button>
         <span>✏️</span>
-        <a href="{{ route('editp') }}" style="text-decoration: none; color: black"
+        <a href="{{ url('edit') }}" style="text-decoration: none; color: black"
           >Edit</a
         >
       </button>

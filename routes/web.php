@@ -8,9 +8,6 @@ use App\Http\Controllers\AuthController;
 Route::get('/group', [PostController::class, 'index'])->name('group');
 
 
-Route::get('/edit', function () {
-    return view('edit');
-})->name('editp');
 
 // Route::get('/login', function () {
 //     return view('auth.login');
@@ -31,6 +28,13 @@ Route::get('/setting', function () {
 
 Route::get('/postdiskusi', [PostController::class, 'show']);
 Route::post('/postdiskusi', [PostController::class, 'store']);
+
+
+
+Route::get('/group/edit/{id}', [PostController::class, 'edit']);
+Route::post( '/group/edit/{id}', [PostController::class, 'update']);
+
+Route::get('/group/destroy/{id}', [PostController::class, 'destroy']);
 
 
 Route::get('/upgrade', function () {

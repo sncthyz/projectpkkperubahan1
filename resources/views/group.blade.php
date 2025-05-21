@@ -14,7 +14,11 @@
   <p class="title">{{$item->title}}</p>
                 <p>{{$item->description}}</p>
 <p class="fw-bold" >📅 {{$item->created_at}}</p>
+<a href="{{url('/group/edit/' . $item->id )}}" class="btn btn-primary">Edit</a>
+<a href="{{url('/group/destroy/'. $item->id)}}" class="btn btn-danger">Hapus</a>
+
    </div>
+
 
 
             </div>

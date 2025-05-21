@@ -70,7 +70,8 @@ return view('postdiskusi');
      */
     public function edit(string $id)
     {
-        //
+$edit=Post::findOrFail($id);
+return view('edit', ['edit' => $edit]);
     }
 
     /**
@@ -78,7 +79,25 @@ return view('postdiskusi');
      */
     public function update(Request $request, string $id)
     {
-        //
+$validation = $request->validate([
+'title'=>'required',
+'description'=>'required',
+'imagePath'=>'required|image|mimes:png,jpg'
+]);
+
+if ($request->hasFile('imagePath')) {
+    $path = $request->file('imagePath')->store('image', 'public');
+$validation['imagePath']=$path;
+
+}
+
+$postedit=Post::findOrFail($id);
+$postedit->update($validation);
+
+return redirect('group')->with('success', 'Data berhasil diupdate');
+
+
+
     }
 
     /**
@@ -86,6 +105,7 @@ return view('postdiskusi');
      */
     public function destroy(string $id)
     {
-        //
+Post::where('id', $id)->delete();
+return redirect()->route('group');
     }
 }
